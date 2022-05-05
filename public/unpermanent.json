@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 2,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 3,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 4,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 5,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 6,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 7,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 8,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    },
+    {
+      "id": 9,
+      "name": "Leanne Graham",
+      "img": "https://i.ibb.co/KjFX3tQ/1st.jpg",
+      "description": "Mercedes-Benz, commonly referred to as Mercedes, is a German luxury automotive brand.",
+      "price": 200,
+      "quantity": 10,
+      "supplierName": "Mr. John"
+    }
+]
