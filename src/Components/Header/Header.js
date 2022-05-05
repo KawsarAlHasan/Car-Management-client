@@ -15,7 +15,7 @@ const Header = (props) => {
                         <Nav.Link href="#pricing">ITEMS</Nav.Link>
                         <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">FAQS</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">PRICING PLAN</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">Happy Clients says</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
