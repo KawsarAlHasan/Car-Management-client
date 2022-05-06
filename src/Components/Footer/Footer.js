@@ -42,7 +42,8 @@ const Footer = (props) => {
                                 <i className="fas fa-gem me-3"></i>Company name
                             </h6>
                             <p>
-                                Programming Hero
+                                Programming Hero <br/>
+                                Complete Web Development Course with Jhankar Mahbub
                             </p>
                         </div>
 
@@ -69,16 +70,16 @@ const Footer = (props) => {
                                 Useful links
                             </h6>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Home</a>
+                                <a href="/home" className="text-reset text-decoration-none">Home</a>
                             </p>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Blogs</a>
+                                <a href="/blogs" className="text-reset text-decoration-none">Blogs</a>
                             </p>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Items</a>
+                                <a href="/items" className="text-reset text-decoration-none">Items</a>
                             </p>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Login</a>
+                                <a href="/login" className="text-reset text-decoration-none">Login</a>
                             </p>
                         </div>
 
