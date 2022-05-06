@@ -9,7 +9,7 @@ const ClientsSays = (props) => {
           <h1 className="text-center my-4">Happy <span className='text-danger'>Clients says</span></h1>
           <div className="row">
             <div className="col-md-4 text-center">
-              <div class="shadow p-3 mb-5 bg-white rounded">
+              <div className="shadow p-3 mb-5 bg-white rounded">
                 <p>Alex Allwood trusts in this mantra as a customer experience specialist and author of Customer Experience is the Brand.</p>
               <img src={person1} className='w-50' alt=""/>
               <h4>Regina Miles</h4>
