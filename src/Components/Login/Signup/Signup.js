@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Signup = (props) => {
 
     const navigate = useNavigate();
+
     const handleSubmit = even => {
         even.preventDefault();
         const name = even.target.name.value;
@@ -12,6 +13,7 @@ const Signup = (props) => {
         const password = even.target.password.value;
         console.log(name, email, password);
     }
+    
     const navigateLogin = even => {
         navigate('/login');
     }

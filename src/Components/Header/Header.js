@@ -4,7 +4,7 @@ import logo from '../images/logo.png';
 
 const Header = (props) => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
+        <Navbar className='text-center' collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
             <Container>
                 <Navbar.Brand href="/home"><img src={logo} className='w-50' alt="logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
