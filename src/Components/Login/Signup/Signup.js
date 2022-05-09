@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = (props) => {
 
@@ -41,6 +42,9 @@ const Signup = (props) => {
                 </Button>
             </Form>
             <p>Already have an  account? <Link to="/login" className='text-danger text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
+            <div className='py-3'>
+                <SocialLogin></SocialLogin>
+            </div>
         </div>
     );
 };
