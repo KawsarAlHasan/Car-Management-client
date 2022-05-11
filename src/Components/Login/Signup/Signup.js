@@ -1,9 +1,18 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = (props) => {
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useCreateUserWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
 
@@ -12,12 +21,18 @@ const Signup = (props) => {
         const name = even.target.name.value;
         const email = even.target.email.value;
         const password = even.target.password.value;
-        console.log(name, email, password);
+
+        createUserWithEmailAndPassword( email, password);
     }
     
-    const navigateLogin = even => {
+    const navigateLogin = () => {
         navigate('/login');
     }
+
+    if (user) {
+        navigate('/blogs');
+    }
+    
     return (
         <div className='container w-50 mx-auto mt-3'>
             <h2 className='text-center'>Please <span className='text-danger'>Sign up</span> a new account.</h2>

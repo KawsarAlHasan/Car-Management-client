@@ -4,7 +4,7 @@ import faqs from '../../images/faqs.jpg';
 
 const Faqs = (props) => {
     return (
-        <div className='container'>
+        <div id='/home#faqs' className='container'>
             <h1 className="text-center mb-4">Frequently <span className='text-danger'> Asked Questions</span></h1>
             <div className='row'>
                 <div className='col-lg-6'>
