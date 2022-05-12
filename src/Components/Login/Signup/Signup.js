@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Signup = (props) => {
@@ -12,7 +13,7 @@ const Signup = (props) => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
     const navigate = useNavigate();
 
@@ -29,8 +30,12 @@ const Signup = (props) => {
         navigate('/login');
     }
 
+    if (loading) {
+        return <Loading></Loading>
+    }
+
     if (user) {
-        navigate('/blogs');
+        navigate('/inventories');
     }
     
     return (
@@ -53,7 +58,7 @@ const Signup = (props) => {
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sign Up
                 </Button>
             </Form>
             <p>Already have an  account? <Link to="/login" className='text-danger text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>

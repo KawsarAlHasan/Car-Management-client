@@ -7,7 +7,7 @@ const InventoryItems = (props) => {
     const [inventorys, setInventorys] = useState([]);
 
     useEffect(() => {
-        fetch('unpermanent.json')
+        fetch('http://localhost:5000/inventorie')
             .then(res => res.json())
             .then(data => setInventorys(data));
     }, [])
@@ -18,7 +18,7 @@ const InventoryItems = (props) => {
             <div className="inventorys-container container">
                 {
                     inventorys.slice(0, 6).map(inventory => <Inventry
-                        key={inventory.id}
+                        key={inventory._id}
                         inventory={inventory}
                     ></Inventry>)
                 }
