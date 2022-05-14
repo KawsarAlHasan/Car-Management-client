@@ -35,7 +35,7 @@ const Signup = (props) => {
     }
 
     if (user) {
-        navigate('/inventories');
+        navigate('/home');
     }
     
     return (

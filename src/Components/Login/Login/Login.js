@@ -47,7 +47,7 @@ const Login = (props) => {
     }
 
     if (user) {
-        navigate('/inventories');
+        navigate('/home');
     }
 
     const resetPassword = async () => {

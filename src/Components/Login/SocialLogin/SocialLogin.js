@@ -26,7 +26,7 @@ const SocialLogin = (props) => {
     }
 
     if (user || user2) {
-        navigate('/blogs');
+        navigate('/home');
     }
 
     return (

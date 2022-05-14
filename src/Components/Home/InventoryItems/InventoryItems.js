@@ -30,6 +30,9 @@ const InventoryItems = (props) => {
                 ></Inventry>)
             }
             </div>
+            <div className='container text-center my-2'>                
+            <a href='/manageInventories' className='text-primary text-decoration-none'>SEE MORE</a>
+            </div>
         </div>
     );
 };
