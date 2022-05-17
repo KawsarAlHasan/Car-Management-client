@@ -23,9 +23,17 @@ const Header = (props) => {
                         <Nav.Link href="/blogs">BLOGS</Nav.Link>
                     </Nav>
                     <Nav>
+
                         {
-                            user ?
-                                <Nav.Link href="/login" onClick={handleSignOut}>SIGN OUT</Nav.Link>
+                            user && <>
+                                <Nav.Link href="/manageInventories">MANAGE ITEMS</Nav.Link>
+                                <Nav.Link href="/addItem">ADD ITEM</Nav.Link>
+                                <Nav.Link href="/myItems">MY ITEMS</Nav.Link>
+                            </>
+                        }
+
+                        {
+                            user ? <Nav.Link href="/login" onClick={handleSignOut}>SIGN OUT</Nav.Link>
                                 :
                                 <>
                                     <Nav.Link href="/login">LOGIN</Nav.Link>

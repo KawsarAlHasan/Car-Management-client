@@ -2,7 +2,7 @@ import { async } from '@firebase/util';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -21,6 +21,10 @@ const Login = (props) => {
     const navigate = useNavigate();
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/";
 
     let erroElement;
 
@@ -47,7 +51,7 @@ const Login = (props) => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate(from, {replace: true});
     }
 
     const resetPassword = async () => {

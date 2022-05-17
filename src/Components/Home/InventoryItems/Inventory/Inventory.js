@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Inventory.css';
 
 const Inventry = ({ inventory }) => {
-    const {_id, name, img, description, price, quantity, supplierName } = inventory;
+    const {_id, name, img, description, price, quantity, supplierName, email } = inventory;
 
     const navigate = useNavigate();
 

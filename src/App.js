@@ -8,10 +8,11 @@ import Login from './Components/Login/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Signup from './Components/Login/Signup/Signup';
 import Blogs from './Components/Blogs/Blogs';
-import Inventories from './Components/Inventories/Inventories';
 import RequireAuth from './Components/Login/RequireAuth/RequireAuth';
 import InventoryDetails from './Components/InventoryDetails/InventoryDetails';
 import ManageInventories from './Components/ManageInventories/ManageInventories';
+import AddItem from './Components/AddItem/AddItem';
+import MyItems from './Components/MyItems/MyItems';
 
 function App() {
   return (
@@ -31,9 +32,15 @@ function App() {
           </RequireAuth>
         }></Route>
 
-        <Route path='/inventories' element={
+        <Route path='/addItem' element={
           <RequireAuth>
-            <Inventories></Inventories>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+
+        <Route path='/myItems' element={
+          <RequireAuth>
+            <MyItems></MyItems>
           </RequireAuth>
         }></Route>
 
