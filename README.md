@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Car Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Side: [Car Management App](https://warehouse-management-react-app.web.app/).
+
+## What has been done on this website:
+1. Create React App
+2. Create Home page, Header, Footer and two others sections.
+3. Added Inventories Items
+4. Added Blogs Route and Four Question to Answer
+5. Added Firebase Login (Email-Password, Google, Github Login)
+6. Added Manage Items etc.
+
+## Stackoverflow Question
+[Stackoverflow Question](https://stackoverflow.com/questions/72200938/how-to-deploy-react-app-in-firebase-how-to-do-it-step-by-step).
+
 
 ## Available Scripts
 
