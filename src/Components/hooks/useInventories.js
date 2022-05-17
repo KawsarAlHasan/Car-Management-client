@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
     useEffect(() => {
         setIsLoading(true);
-        fetch('http://localhost:5000/inventorie')
+        fetch('https://sheltered-scrubland-04701.herokuapp.com/inventorie')
             .then(res => res.json())
             .then(data => {
                 setInventorys(data)

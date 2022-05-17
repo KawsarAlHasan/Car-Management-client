@@ -8,7 +8,7 @@ const AddItem = (props) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/myitems`;
+        const url = `https://sheltered-scrubland-04701.herokuapp.com/myitems`;
         fetch(url, {
             method: 'POST',
             headers: {

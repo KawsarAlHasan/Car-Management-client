@@ -12,7 +12,7 @@ const InventoryDetails = (props) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/inventorie/${invetoryId}`;
+        const url = `https://sheltered-scrubland-04701.herokuapp.com/inventorie/${invetoryId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -29,7 +29,7 @@ const InventoryDetails = (props) => {
     };
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventorie/${invetoryId}`;
+        const url = `https://sheltered-scrubland-04701.herokuapp.com/inventorie/${invetoryId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data));

@@ -10,7 +10,7 @@ const ManageInventory = ({ inventory }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/inventorie/${id}`;
+            const url = `https://sheltered-scrubland-04701.herokuapp.com/inventorie/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
